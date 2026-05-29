@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Auto Click Pro</string>
+    <string name="accessibility_service_label">Auto Click Automation</string>
+    <string name="accessibility_service_description">Allows Auto Click Pro to perform automated touch gestures on screen based on received signals from APIs, Telegram, WebSocket, or local intents.</string>
+</resources>

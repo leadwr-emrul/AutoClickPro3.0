@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.AutoClick" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">#1F6FEB</item>
+        <item name="colorPrimaryDark">#0D1117</item>
+        <item name="colorAccent">#58A6FF</item>
+        <item name="android:windowBackground">#0D1117</item>
+        <item name="android:statusBarColor">#0D1117</item>
+        <item name="android:navigationBarColor">#0D1117</item>
+    </style>
+
+    <style name="Theme.AutoClick.ActionBar" parent="Theme.AutoClick">
+        <item name="windowActionBar">true</item>
+        <item name="windowNoTitle">false</item>
+        <item name="actionBarStyle">@style/AutoClickActionBar</item>
+    </style>
+
+    <style name="AutoClickActionBar" parent="Widget.AppCompat.ActionBar">
+        <item name="background">#161B22</item>
+        <item name="titleTextStyle">@style/AutoClickActionBar.Title</item>
+    </style>
+
+    <style name="AutoClickActionBar.Title" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">#E6EDF3</item>
+    </style>
+
+    <style name="Theme.Transparent" parent="Theme.AutoClick">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+</resources>

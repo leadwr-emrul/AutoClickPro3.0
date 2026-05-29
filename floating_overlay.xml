@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#CC0D1117"
+    android:padding="4dp">
+
+    <!-- Drag handle + main button row -->
+    <LinearLayout
+        android:id="@+id/drag_handle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="4dp">
+
+        <TextView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:text="⚡"
+            android:textSize="14sp"
+            android:gravity="center"/>
+
+        <Button
+            android:id="@+id/btn_toggle"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:text="▼"
+            android:textSize="10sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#1F6FEB"
+            android:padding="0dp"
+            android:layout_marginStart="2dp"/>
+    </LinearLayout>
+
+    <!-- Status text -->
+    <TextView
+        android:id="@+id/tv_status"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="Ready"
+        android:textColor="#8B949E"
+        android:textSize="9sp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:paddingStart="4dp"/>
+
+    <!-- Expanded panel -->
+    <LinearLayout
+        android:id="@+id/expanded_panel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_marginTop="4dp">
+
+        <Button
+            android:id="@+id/btn_start"
+            android:layout_width="120dp"
+            android:layout_height="36dp"
+            android:text="▶ START"
+            android:textColor="#FFFFFF"
+            android:textSize="11sp"
+            android:backgroundTint="#238636"
+            android:layout_marginBottom="4dp"/>
+
+        <Button
+            android:id="@+id/btn_stop"
+            android:layout_width="120dp"
+            android:layout_height="36dp"
+            android:text="■ STOP"
+            android:textColor="#FFFFFF"
+            android:textSize="11sp"
+            android:backgroundTint="#DA3633"
+            android:alpha="0.5"
+            android:layout_marginBottom="4dp"/>
+
+        <Button
+            android:id="@+id/btn_pick"
+            android:layout_width="120dp"
+            android:layout_height="36dp"
+            android:text="⊕ Pick Point"
+            android:textColor="#FFFFFF"
+            android:textSize="11sp"
+            android:backgroundTint="#6E40C9"
+            android:layout_marginBottom="4dp"/>
+
+        <Button
+            android:id="@+id/btn_close"
+            android:layout_width="120dp"
+            android:layout_height="32dp"
+            android:text="✕ Close"
+            android:textColor="#8B949E"
+            android:textSize="10sp"
+            android:backgroundTint="#21262D"/>
+    </LinearLayout>
+
+</LinearLayout>

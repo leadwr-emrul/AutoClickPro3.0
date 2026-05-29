@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg_primary">#0D1117</color>
+    <color name="bg_secondary">#161B22</color>
+    <color name="bg_tertiary">#21262D</color>
+    <color name="text_primary">#E6EDF3</color>
+    <color name="text_secondary">#8B949E</color>
+    <color name="accent_blue">#58A6FF</color>
+    <color name="accent_green">#3FB950</color>
+    <color name="accent_red">#F85149</color>
+    <color name="accent_orange">#FFA657</color>
+    <color name="accent_purple">#D2A8FF</color>
+    <color name="btn_primary">#1F6FEB</color>
+    <color name="btn_success">#238636</color>
+    <color name="btn_danger">#DA3633</color>
+</resources>

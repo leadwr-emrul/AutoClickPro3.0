@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0D1117">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <!-- Click Positions Section -->
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="CLICK POSITIONS" android:textColor="#58A6FF" android:textSize="12sp"
+            android:letterSpacing="0.1" android:layout_marginBottom="8dp"/>
+
+        <!-- BIG Position -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:gravity="center_vertical"
+            android:background="#161B22" android:padding="10dp" android:layout_marginBottom="6dp">
+            <TextView android:layout_width="60dp" android:layout_height="wrap_content"
+                android:text="BIG" android:textColor="#3FB950" android:textStyle="bold"/>
+            <EditText android:id="@+id/et_big_x" android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:hint="X" android:inputType="numberDecimal"
+                android:textColor="#E6EDF3" android:textColorHint="#8B949E" android:background="#21262D"
+                android:padding="8dp" android:layout_marginEnd="4dp"/>
+            <EditText android:id="@+id/et_big_y" android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:hint="Y" android:inputType="numberDecimal"
+                android:textColor="#E6EDF3" android:textColorHint="#8B949E" android:background="#21262D"
+                android:padding="8dp" android:layout_marginStart="4dp"/>
+            <Button android:id="@+id/btn_pick_big" android:layout_width="wrap_content" android:layout_height="36dp"
+                android:text="Pick" android:textSize="11sp" android:backgroundTint="#1F6FEB"
+                android:layout_marginStart="6dp"/>
+        </LinearLayout>
+
+        <!-- SMALL Position -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:gravity="center_vertical"
+            android:background="#161B22" android:padding="10dp" android:layout_marginBottom="6dp">
+            <TextView android:layout_width="60dp" android:layout_height="wrap_content"
+                android:text="SMALL" android:textColor="#F85149" android:textStyle="bold"/>
+            <EditText android:id="@+id/et_small_x" android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:hint="X" android:inputType="numberDecimal"
+                android:textColor="#E6EDF3" android:textColorHint="#8B949E" android:background="#21262D"
+                android:padding="8dp" android:layout_marginEnd="4dp"/>
+            <EditText android:id="@+id/et_small_y" android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:hint="Y" android:inputType="numberDecimal"
+                android:textColor="#E6EDF3" android:textColorHint="#8B949E" android:background="#21262D"
+                android:padding="8dp" android:layout_marginStart="4dp"/>
+            <Button android:id="@+id/btn_pick_small" android:layout_width="wrap_content" android:layout_height="36dp"
+                android:text="Pick" android:textSize="11sp" android:backgroundTint="#1F6FEB"
+                android:layout_marginStart="6dp"/>
+        </LinearLayout>
+
+        <!-- NUMBER Position -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:gravity="center_vertical"
+            android:background="#161B22" android:padding="10dp" android:layout_marginBottom="6dp">
+            <TextView android:layout_width="60dp" android:layout_height="wrap_content"
+                android:text="NUMBER" android:textColor="#D2A8FF" android:textStyle="bold"/>
+            <EditText android:id="@+id/et_number_x" android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:hint="X" android:inputType="numberDecimal"
+                android:textColor="#E6EDF3" android:textColorHint="#8B949E" android:background="#21262D"
+                android:padding="8dp" android:layout_marginEnd="4dp"/>
+            <EditText android:id="@+id/et_number_y" android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:hint="Y" android:inputType="numberDecimal"
+                android:textColor="#E6EDF3" android:textColorHint="#8B949E" android:background="#21262D"
+                android:padding="8dp" android:layout_marginStart="4dp"/>
+            <Button android:id="@+id/btn_pick_number" android:layout_width="wrap_content" android:layout_height="36dp"
+                android:text="Pick" android:textSize="11sp" android:backgroundTint="#1F6FEB"
+                android:layout_marginStart="6dp"/>
+        </LinearLayout>
+
+        <!-- CONFIRM Position -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:gravity="center_vertical"
+            android:background="#161B22" android:padding="10dp" android:layout_marginBottom="12dp">
+            <TextView android:layout_width="60dp" android:layout_height="wrap_content"
+                android:text="CONFIRM" android:textColor="#FFA657" android:textStyle="bold"/>
+            <EditText android:id="@+id/et_confirm_x" android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:hint="X" android:inputType="numberDecimal"
+                android:textColor="#E6EDF3" android:textColorHint="#8B949E" android:background="#21262D"
+                android:padding="8dp" android:layout_marginEnd="4dp"/>
+            <EditText android:id="@+id/et_confirm_y" android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:hint="Y" android:inputType="numberDecimal"
+                android:textColor="#E6EDF3" android:textColorHint="#8B949E" android:background="#21262D"
+                android:padding="8dp" android:layout_marginStart="4dp"/>
+            <Button android:id="@+id/btn_pick_confirm" android:layout_width="wrap_content" android:layout_height="36dp"
+                android:text="Pick" android:textSize="11sp" android:backgroundTint="#1F6FEB"
+                android:layout_marginStart="6dp"/>
+        </LinearLayout>
+
+        <!-- Delay Config -->
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="DELAY CONFIG (ms)" android:textColor="#58A6FF" android:textSize="12sp"
+            android:letterSpacing="0.1" android:layout_marginBottom="8dp"/>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:background="#161B22" android:padding="10dp"
+            android:layout_marginBottom="12dp">
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:orientation="vertical" android:layout_marginEnd="4dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="First Click" android:textColor="#8B949E" android:textSize="10sp"/>
+                <EditText android:id="@+id/et_first_delay" android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:inputType="number"
+                    android:textColor="#E6EDF3" android:background="#21262D" android:padding="8dp"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:orientation="vertical" android:layout_marginEnd="4dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Multi Click" android:textColor="#8B949E" android:textSize="10sp"/>
+                <EditText android:id="@+id/et_multi_delay" android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:inputType="number"
+                    android:textColor="#E6EDF3" android:background="#21262D" android:padding="8dp"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:orientation="vertical">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Final Click" android:textColor="#8B949E" android:textSize="10sp"/>
+                <EditText android:id="@+id/et_final_delay" android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:inputType="number"
+                    android:textColor="#E6EDF3" android:background="#21262D" android:padding="8dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- API Config -->
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="DATA SOURCE CONFIG" android:textColor="#58A6FF" android:textSize="12sp"
+            android:letterSpacing="0.1" android:layout_marginBottom="8dp"/>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:background="#161B22" android:padding="10dp"
+            android:layout_marginBottom="12dp">
+
+            <Spinner android:id="@+id/spinner_api_type" android:layout_width="match_parent"
+                android:layout_height="44dp" android:background="#21262D"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="API/Firebase URL" android:textColor="#8B949E" android:textSize="10sp"/>
+            <EditText android:id="@+id/et_api_url" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:hint="https://example.com/signal"
+                android:inputType="textUri" android:textColor="#E6EDF3" android:textColorHint="#8B949E"
+                android:background="#21262D" android:padding="8dp" android:layout_marginBottom="8dp"/>
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="WebSocket URL" android:textColor="#8B949E" android:textSize="10sp"/>
+            <EditText android:id="@+id/et_ws_url" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:hint="ws://example.com/ws"
+                android:inputType="textUri" android:textColor="#E6EDF3" android:textColorHint="#8B949E"
+                android:background="#21262D" android:padding="8dp" android:layout_marginBottom="8dp"/>
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Telegram Bot Token" android:textColor="#8B949E" android:textSize="10sp"/>
+            <EditText android:id="@+id/et_telegram_token" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:hint="123456:ABC-DEF..."
+                android:textColor="#E6EDF3" android:textColorHint="#8B949E"
+                android:background="#21262D" android:padding="8dp" android:layout_marginBottom="8dp"/>
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Telegram Chat ID (optional)" android:textColor="#8B949E" android:textSize="10sp"/>
+            <EditText android:id="@+id/et_telegram_chat_id" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:hint="-100123456789"
+                android:inputType="numberSigned" android:textColor="#E6EDF3" android:textColorHint="#8B949E"
+                android:background="#21262D" android:padding="8dp" android:layout_marginBottom="8dp"/>
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Auth Token (Bearer)" android:textColor="#8B949E" android:textSize="10sp"/>
+            <EditText android:id="@+id/et_auth_token" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:hint="optional"
+                android:textColor="#E6EDF3" android:textColorHint="#8B949E"
+                android:background="#21262D" android:padding="8dp" android:layout_marginBottom="8dp"/>
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Poll Interval (ms)" android:textColor="#8B949E" android:textSize="10sp"/>
+            <EditText android:id="@+id/et_poll_interval" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:hint="2000" android:inputType="number"
+                android:textColor="#E6EDF3" android:textColorHint="#8B949E"
+                android:background="#21262D" android:padding="8dp" android:layout_marginBottom="8dp"/>
+
+            <CheckBox android:id="@+id/cb_auto_reconnect" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:text="Auto Reconnect"
+                android:textColor="#E6EDF3" android:buttonTint="#58A6FF" android:checked="true"/>
+        </LinearLayout>
+
+        <!-- Action Buttons -->
+        <Button android:id="@+id/btn_save" android:layout_width="match_parent"
+            android:layout_height="48dp" android:text="SAVE PROFILE" android:textColor="#FFFFFF"
+            android:textStyle="bold" android:backgroundTint="#238636" android:layout_marginBottom="8dp"/>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button android:id="@+id/btn_new_profile" android:layout_width="0dp" android:layout_height="44dp"
+                android:layout_weight="1" android:text="New Profile" android:textColor="#FFFFFF"
+                android:textSize="12sp" android:backgroundTint="#1F6FEB" android:layout_marginEnd="4dp"/>
+            <Button android:id="@+id/btn_export" android:layout_width="0dp" android:layout_height="44dp"
+                android:layout_weight="1" android:text="Export" android:textColor="#FFFFFF"
+                android:textSize="12sp" android:backgroundTint="#21262D" android:layout_marginEnd="4dp"/>
+            <Button android:id="@+id/btn_import" android:layout_width="0dp" android:layout_height="44dp"
+                android:layout_weight="1" android:text="Import" android:textColor="#FFFFFF"
+                android:textSize="12sp" android:backgroundTint="#21262D"/>
+        </LinearLayout>
+
+        <View android:layout_width="match_parent" android:layout_height="24dp"/>
+
+    </LinearLayout>
+</ScrollView>

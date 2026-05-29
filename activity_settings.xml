@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- activity_settings.xml -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0D1117">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="16dp">
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="APP SETTINGS" android:textColor="#58A6FF" android:textSize="12sp"
+            android:letterSpacing="0.1" android:layout_marginBottom="12dp"/>
+
+        <CheckBox android:id="@+id/cb_overlay" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:text="Show Floating Overlay on Start"
+            android:textColor="#E6EDF3" android:buttonTint="#58A6FF" android:layout_marginBottom="12dp"/>
+
+        <CheckBox android:id="@+id/cb_autostart" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:text="Auto-start on Device Boot"
+            android:textColor="#E6EDF3" android:buttonTint="#58A6FF" android:layout_marginBottom="12dp"/>
+
+        <CheckBox android:id="@+id/cb_dark_mode" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:text="Dark Mode"
+            android:textColor="#E6EDF3" android:buttonTint="#58A6FF" android:layout_marginBottom="16dp"/>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:id="@+id/tv_log_size" android:text="Max logs: 500"
+            android:textColor="#8B949E" android:layout_marginBottom="4dp"/>
+
+        <SeekBar android:id="@+id/sb_log_size" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:max="2000" android:progress="500"
+            android:progressTint="#58A6FF" android:thumbTint="#58A6FF"/>
+
+    </LinearLayout>
+</ScrollView>
